@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/base:bullseye
 
-TERRAFORM_VERSION=1.3.9
+# Set Terraform version
+ENV TERRAFORM_VERSION=1.3.9
 
 # Google Cloud SDK
 RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list \
