@@ -1,0 +1,12 @@
+cat <<EOL > devcontainer.json
+{
+  "name": "Google Cloud SDK & Terraform Environment",
+  "dockerFile": "Dockerfile",
+  "extensions": [
+    "hashicorp.terraform",
+    "ms-azuretools.vscode-docker",
+    "googlecloudtools.cloudcode"
+  ],
+  "postCreateCommand": "gcloud init"
+}
+EOL
